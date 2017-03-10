@@ -1,13 +1,12 @@
 Overview
 --------
-Save the attached file to your workspace and unpack the files. You should now have a folder, coding-data-exam, with three sub-folders:
+You have a folder,containing following three sub-folders:
 
         wx_data/        Weather data files
         yld_data/       Yield data files
         answers/        Empty folder where you will place your answers to the questions on this exam
         src/            Empty folder where you will place your source code that generated the answers
         
-You can use whatever software tools you would like to answer the exam problems. Each problem will require some development and analysis from you. Read the instructions carefully-- you will be graded for your ability to provide the precise answer to these problems.
 
 Weather Data Description
 ------------------------
