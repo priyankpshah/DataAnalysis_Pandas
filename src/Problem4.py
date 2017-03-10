@@ -39,10 +39,9 @@ class FindPearsonCR:
 
     def find_pearsoncr(self,frame,file):
         result = {"MaxAvg": None, "MinAvg":None, "PrecAvg":None,"Filename": file}
-        print frame
-        # for key in self.keys:
-        #     result[key] = frame[[key,"Corn"]].corr(method='pearson').iloc[0][1]
-        # return result
+        for key in self.keys:
+             result[key] = frame[[key,"Corn"]].corr(method='pearson').iloc[0][1]
+        return result
 
     def WriteResult(self):
         finaldataframe = pd.DataFrame(self.corr_data)
@@ -66,5 +65,5 @@ if __name__ == '__main__':
     fp = FindPearsonCR(yeildpath,sourcepath, destpath)
     fp.readYeildFile()
     fp.readFile()
-    # fp.WriteResult()
+    fp.WriteResult()
 
